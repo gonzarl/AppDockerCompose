@@ -9,6 +9,5 @@ El contenido de las carpetas es:
 
 Todos los generadores de números ofrecen sus servicios a través de http://localhost pero en diferentes puertos y de diferentes formas de acuerdo a la naturaleza del lenguaje.
 
-La aplicacion React debe configurarse con los puertos apropiados para que pueda consultar. 
-Deshabilitar CORS para probarla.
+La aplicacion React corre en el puerto 3000. Deshabilitar CORS para probarla.
 

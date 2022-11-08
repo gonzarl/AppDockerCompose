@@ -30,7 +30,6 @@ async function getNumero (url){
 function FeedRandoms(){
     const [numero, setNumero] = useState(0);
     let indice = Math.floor(Math.random() * requests.length);
-    console.log(indice);
     let microservicio = requests[indice]
     let url = microservicio.url;
     console.log(url);
@@ -38,7 +37,6 @@ function FeedRandoms(){
         color: microservicio.color
     }
     
-    console.log(indice);
     useInterval(() => {
         getNumero(url).then(response=>{
             setNumero(response);

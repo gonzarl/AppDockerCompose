@@ -1,0 +1,41 @@
+version: '3'
+services:
+  
+  express:
+    image: express
+    build: ./ex
+    container_name: micro-express
+    ports:
+      - "3001:3000"
+
+  express-2:
+    image: express
+    container_name: micro-express-2
+    ports:
+      - "3002:3000"
+
+  php:
+    image: php
+    build: ./ph
+    container_name: micro-php
+    ports:
+      - "3003:80"
+
+  python:
+    image: python
+    build: ./py/.venv
+    container_name: micro-python
+    ports:
+      - "3004:5000"
+
+  randoms:
+    image: randoms
+    build: ./randoms
+    container_name: micro-app
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_EXPRESS_PORT=3001
+      - REACT_APP_EXPRESS2_PORT=3002
+      - REACT_APP_PHP_PORT=3003
+      - REACT_APP_PYTHON_PORT=3004
