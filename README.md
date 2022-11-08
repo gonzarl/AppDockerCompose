@@ -1,4 +1,4 @@
-#Integrantes: Victoria Martin Sahagun y Gonzalo Riquelme Ludwig
+# Integrantes: Victoria Martin Sahagun y Gonzalo Riquelme Ludwig
 
 # Randoms
 Ejercicio de microservicios para docker compose.
